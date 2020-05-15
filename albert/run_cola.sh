@@ -48,6 +48,6 @@ python examples/run_glue_freelb.py \
 
 
 # runexp TASK_NAME  gpu    model_name          adv_lr    adv_mag    anorm    asteps    lr       bsize    grad_accu   hdp   adp    ts     ws       seed      wd
-runexp   CoLA       3      albert-xxlarge-v2   2.5e-2    4e-1       3e-1     3         1e-5     16       1           0     0      5536   320      9017      0.1
-runexp   CoLA       3      albert-xxlarge-v2   2.5e-2    4e-1       3e-1     3         1e-5     16       1           0     0      5536   320      1125      0.01
-runexp   CoLA       3      albert-xxlarge-v2   2.5e-2    4e-1       3e-1     3         1e-5     16       1           0     0      5536   320      42        0.01
+runexp   CoLA       0      albert-xxlarge-v2   2.5e-2    4e-1       3e-1     3         1e-5     16       1           0     0      5536   320      9017      0.1
+runexp   CoLA       1      albert-xxlarge-v2   2.5e-2    4e-1       3e-1     3         1e-5     16       1           0     0      5536   320      1125      0.01
+runexp   CoLA       2      albert-xxlarge-v2   2.5e-2    4e-1       3e-1     3         1e-5     16       1           0     0      5536   320      42        0.01

@@ -2,9 +2,9 @@
 This is a course project for Nature Language Process(CS229), ACM Class 2017, SJTU. Written in 2020.
 
 ## Introduction
-The General Language Understanding Evaluation (GLUE) benchmark is a diverse set of existing natural language understanding tasks. In this course project, we choose CoLA as our task to evaluate the performance of our language models. For my approaches, I try several models and finally choose two models: ALBERT(from Google Research and the Toyota Technological Institute at Chicago) and ELECTRA(from Google Research/Stanford University) as my pretrained models and then finetune on CoLA tasks respectively. I use ensemble method to combine the results derived from the two models and obtain a quite good score **74.2** on CoLA task.
+The General Language Understanding Evaluation (GLUE) benchmark is a diverse set of existing natural language understanding tasks. In this course project, we choose CoLA as our task to evaluate the performance of our language models. For my approaches, I try several models and finally choose two models: **ALBERT**(from Google Research and the Toyota Technological Institute at Chicago) and **ELECTRA**(from Google Research/Stanford University) as my pretrained models and then finetune on CoLA tasks respectively. I use ensemble method to combine the results derived from the two models and obtain a quite good score **74.2** on CoLA task.
 
-For details of my method, please refer to my [report](doc/report.pdf).
+For details of my method and evaluation, please refer to my [report](doc/report.pdf).
 
 ## Prerequisites
 * Python 3
@@ -37,6 +37,10 @@ python download_glue_data.py --data_dir glue_data --tasks CoLA
 cd glue_data
 mkdir finetuning_data
 mv CoLA finetuning_data/cola
+mkdir models
+cd models
+wget https://storage.googleapis.com/electra-data/electra_large.zip
+unzip electra_large.zip
 
 ```
 
@@ -45,11 +49,11 @@ I provide two scripts for ALBERT and ELECTRA to finetune on CoLA task. For ALBER
 ```bash
 # For albert
 cd albert
-sh run_cola.sh
+bash run_cola.sh
 
 # For electra
-cd albert
-sh run_cola.sh
+cd electra
+bash run_cola.sh
 
 ```
 ## Inference on CoLA task
@@ -64,7 +68,6 @@ cd electra
 python inference.py
 
 ```
-
 ## Reference
 * https://github.com/zhuchen03/FreeLB
 * https://github.com/google-research/electra
