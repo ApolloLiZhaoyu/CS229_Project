@@ -52,7 +52,7 @@ cd albert
 sh run_cola.sh
 
 ```
-# Inference on CoLA task
+## Inference on CoLA task
 I provide my python file for inferencing on CoLA task. Just modify the path to your model in inference.py for prediction.
 ```bash
 # For albert
@@ -65,12 +65,12 @@ python inference.py
 
 ```
 
-# Reference
-https://github.com/zhuchen03/FreeLB
-https://github.com/google-research/electra
-https://github.com/huggingface/transformers
+## Reference
+* https://github.com/zhuchen03/FreeLB
+* https://github.com/google-research/electra
+* https://github.com/huggingface/transformers
 
-# Appendix
+## Appendix
 The screenshot of my test result is showed as below:
 ![Result](img/result.png)
 
