@@ -60,10 +60,12 @@ bash run_cola.sh
 I provide two python files for inferencing on CoLA task. Just modify the path to your model or checkpoint in inference.py for prediction.
 ```bash
 # For albert
+# The average score of the three models on CoLA test set are more than 69.8.
 cd albert
 python inference.py
 
 # For electra
+# Almost all of the models are more than 70.1 on CoLA test set.
 cd electra
 python inference.py
 
