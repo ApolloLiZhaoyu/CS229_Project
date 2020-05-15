@@ -65,7 +65,7 @@ cd albert
 python inference.py
 
 # For electra
-# Almost all of the models are more than 70.1 on CoLA test set.
+# Almost all of the models achieve more than 70.1 score on CoLA test set.
 cd electra
 python inference.py
 
