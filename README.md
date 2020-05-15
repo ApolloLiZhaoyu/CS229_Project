@@ -11,7 +11,7 @@ For details of my method and evaluation, please refer to my [report](doc/report.
 * NumPy
 * scikit-learn and SciPy
 
-The code is compatible with PyTorch 1.5.0 and TensorFlow 1.15. Inaddition, you need to execute the followings in order to install other packages.
+The code is compatible with PyTorch 1.5.0 and TensorFlow 1.15. In addition, you need to execute the followings in order to download CoLA dataset and install other packages.
 
 ```bash
 # Install apex
@@ -57,7 +57,7 @@ bash run_cola.sh
 
 ```
 ## Inference on CoLA task
-I provide my python file for inferencing on CoLA task. Just modify the path to your model in inference.py for prediction.
+I provide two python files for inferencing on CoLA task. Just modify the path to your model or checkpoint in inference.py for prediction.
 ```bash
 # For albert
 cd albert
