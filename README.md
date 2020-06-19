@@ -9,7 +9,9 @@ For details of my method and evaluation, please refer to my [report](doc/report.
 ## Prerequisites
 * Python 3
 * NumPy
-* scikit-learn and SciPy
+* scikit-learn
+* SciPy
+* comet_ml
 
 The code is compatible with PyTorch 1.5.0 and TensorFlow 1.15. In addition, you need to execute the followings in order to download CoLA dataset and install other packages.
 
