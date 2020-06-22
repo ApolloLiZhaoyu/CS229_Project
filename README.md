@@ -5,6 +5,7 @@ This is a course project for Nature Language Process(CS229), ACM Class 2017, SJT
 The General Language Understanding Evaluation (GLUE) benchmark is a diverse set of existing natural language understanding tasks. In this course project, we choose **CoLA** as our task to evaluate the performance of our language models. For my approaches, at first, I try **ERNIE**, **MT-DNN**, **RoBERTa** models with carefully parameters selecting. However, I fail to achieve good scores on dev set. After reading the latest papers and codebases, I finally choose two models: **ALBERT**(from Google Research and the Toyota Technological Institute at Chicago) and **ELECTRA**(from Google Research/Stanford University) as my pretrained models and then finetune on CoLA tasks respectively. I use ensemble method to combine the results derived from the two models and obtain a quite good score **74.2** on CoLA task.
 
 For details of my method and evaluation, please refer to my [report](doc/report.pdf).
+I also provide some [checkpoints](https://jbox.sjtu.edu.cn/l/hJjlw9) of my model, you can download them if you like. 
 
 ## Prerequisites
 * Python 3
